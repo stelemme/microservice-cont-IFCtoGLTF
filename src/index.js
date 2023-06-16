@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 // The port on which the Microservice runs
-const PORT = process.env.PORT;
+const PORT = 3000;
 
 app.use(bodyParser.json());
 
