@@ -1,17 +1,20 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
 
 // The port on which the Microservice runs
-const PORT = 4000;
+const PORT = process.env.PORT;
+
+app.use(bodyParser.json());
 
 // Assigning the routes to the "/" URI
 const homeRouter = require("./routes/home");
 app.use("/", homeRouter);
 
-// Assigning the routes to the "/cnt" URI
-const cntRouter = require("./routes/cnt");
-app.use("/cnt", cntRouter);
+// Assigning the routes to the "/cont" URI
+const contRouter = require("./routes/cont");
+app.use("/cont", contRouter);
 
 app.listen(PORT, () => {
   console.log(`Microservice available at: http://localhost:${PORT}/`);
