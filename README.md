@@ -11,7 +11,7 @@ npm run start
 npm run start:dev
 ```
 ## Using the Microservice
-The functionality of this Microservice can be acces via the following endpoint.
+The functionality of this Microservice can be accessed via the following endpoint.
   
 [http://localhost:3000/cont/ifc-to-gltf](http://localhost:3000/cont/ifc-to-gltf)
   
